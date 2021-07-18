@@ -6,6 +6,35 @@ h1 {
     color:ivory;
 }
 
+h2{
+    color:ivory;
+    font-style:oblique;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 30px;
+}
+
+ol li{
+    color:ivory;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+ul li{
+    color:ivory;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#baby {
+    border:rgb(216, 184, 185);
+    border-style: groove; 
+    border-width:thick;
+    margin: 0 auto;
+    width: 200px;
+    
+    
+    
+
+
+}
 header {
     background-color: rgb(216, 184, 185);
     height: 100px;
@@ -32,7 +61,13 @@ nav li a :hover{
 body {
     background-color: rgb(151, 111, 111);
 }
-p {
+body p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: ivory;
+   
+    
+}
+footer p {
+    color:rgb(216, 184, 185);
+
 }
