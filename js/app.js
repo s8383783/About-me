@@ -63,6 +63,9 @@ else{
 questionThree();
 
 //Question 4
+
+function questionFour(){
+
 let ShaniaL = prompt('I currently live in Arizona. Is this where I am from?');
 let ShaniaLow = ShaniaL.toLowerCase();
 if (ShaniaLow === 'no' || ShaniaLow === 'n') {
@@ -74,6 +77,9 @@ else if (ShaniaLow === 'yes' || ShaniaLow === 'y') {
 }
 else{
   alert('That is not an option!');}
+
+}
+questionFour();
 
 // Question 5
 let favGame = prompt('My favorite game is cyberpunk 2077?');
