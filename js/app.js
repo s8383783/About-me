@@ -121,40 +121,44 @@ function questionSix(){
     }
   }
 }
-questionFive();
+questionSix();
 
 
 //Question7
 
+function questionSeven(){
 
-const flower = ['daisy', 'rose', 'sunflower', 'magnolia', 'plumeria', 'blue bonnet'];
-let attempts = 6;
-let userAnswer = prompt('What is my favorite flower?');
-let lowerUserAnswer = userAnswer.toLowerCase();
+  const flower = ['daisy', 'rose', 'sunflower', 'magnolia', 'plumeria', 'blue bonnet'];
+  let attempts = 6;
+  let userAnswer = prompt('What is my favorite flower?');
+  let lowerUserAnswer = userAnswer.toLowerCase();
 
-while (attempts > 0){
-  for(let i = 0; i < flower.length; i++){
-    if (lowerUserAnswer === flower[i]){
-      alert ('Congrats! You got it right!');
-      Right++;
-      attempts = 0;
-      break;}}
+  while (attempts > 0){
+    for(let i = 0; i < flower.length; i++){
+      if (lowerUserAnswer === flower[i]){
+        alert ('Congrats! You got it right!');
+        Right++;
+        attempts = 0;
+        break;}
+      }
 
-  attempts -= 1;
-  if (attempts > 0){
-    userAnswer = prompt ('Sorry, you got it wrong. Please try again.');
-    lowerUserAnswer = userAnswer.toLowerCase();
-    console.log(lowerUserAnswer);
+    attempts -= 1;
+    if (attempts > 0){
+      userAnswer = prompt ('Sorry, you got it wrong. Please try again.');
+      lowerUserAnswer = userAnswer.toLowerCase();
+      console.log(lowerUserAnswer);
+    }
+    else if (attempts === 0){
+      alert('Sorry you\'ve run out of attempts. Better luck next time. Possible answers could have been ' +flower+'.');
+    }
+    else (alert ('Great job! All possible answers were ' +flower+ '.'));
   }
-  else if (attempts === 0){
-    alert('Sorry you\'ve run out of attempts. Better luck next time. Possible answers could have been ' +flower+'.');
-  }
-  else (alert ('Great job! All possible answers were ' +flower+ '.'));
 }
-
+questionSeven();
 
 
 if (Right < 4){
   alert('You got'+' ' + Right + ' right! Maybe you should try again.');
 }
-else if (Right > 4) {alert('You got' +' ' + Right + ' right! Decent Job....');}
+else if (Right > 4) {alert('You got' +' ' + Right + ' right! Decent Job....');
+}
