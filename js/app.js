@@ -7,6 +7,8 @@ console.log(yourName);
 let Right = 0;
 
 // Question 1
+function questionOne(){
+
 let Army = prompt('Was I in the military?');
 let lowArmy = Army.toLowerCase();
 console.log(lowArmy);
@@ -19,7 +21,12 @@ else if(lowArmy === 'no' || lowArmy === 'n') {
 else{
   alert('That is not an option!');}
 
+}
+questionOne();
+
 // Question 2
+
+
 let color = prompt('Is my favorite color green?');
 let lowColor = color.toLowerCase();
 if (lowColor === 'yes' || lowColor === 'y') {
@@ -31,7 +38,6 @@ else if(lowColor === 'no' || lowColor === 'n') {
 
 else {
   alert('That is not an option!');}
-
 
 
 // Question 3
