@@ -44,6 +44,9 @@ else {
 questionTwo();
 
 // Question 3
+
+function questionThree(){
+
 let bestState = prompt('Is Texas the greatest state in the entire world?');
 let lowbestState = bestState.toLowerCase();
 if (lowbestState === 'yes' || lowbestState === 'y') {
@@ -55,6 +58,9 @@ else if (lowbestState === 'no' || lowbestState === 'n') {
 
 else{
   alert('That is not an option!');}
+
+}
+questionThree();
 
 //Question 4
 let ShaniaL = prompt('I currently live in Arizona. Is this where I am from?');
@@ -81,6 +87,8 @@ else if (lowFavegame === 'no' || lowFavegame === 'n') {
 }
 else{
   alert('That is not an option!');}
+
+
 
 //Question 6
 let NumberOfChances = 6;
