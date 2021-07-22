@@ -101,22 +101,27 @@ else{
 questionFive();
 
 //Question 6
-let NumberOfChances = 6;
-let i = 0;
-let favnum = prompt('What is my favorite number? 2,4,6, or 8?');
-let favNumanswer = parseInt(favnum);
-for(i = 0; i < NumberOfChances; i++){
-  let remainingChances = NumberOfChances - i - 1;
-  if (favNumanswer < 8){
-    favNumanswer = prompt('Your guess is to low! Try again. You have' + remainingChances + 'remaining');}
-  else if(favNumanswer > 8){
-    favNumanswer = prompt('Your guess is to high! Try again. You have' + remainingChances + 'remaining');
-  }
-  else if(favNumanswer === 8){
-    alert('Correct!');
-    Right++;
-  }}
 
+function questionSix(){
+
+  let NumberOfChances = 6;
+  let i = 0;
+  let favnum = prompt('What is my favorite number? 2,4,6, or 8?');
+  let favNumanswer = parseInt(favnum);
+  for(i = 0; i < NumberOfChances; i++){
+    let remainingChances = NumberOfChances - i - 1;
+    if (favNumanswer < 8){
+      favNumanswer = prompt('Your guess is to low! Try again. You have' + remainingChances + 'remaining');}
+    else if(favNumanswer > 8){
+      favNumanswer = prompt('Your guess is to high! Try again. You have' + remainingChances + 'remaining');
+    }
+    else if(favNumanswer === 8){
+      alert('Correct!');
+      Right++;
+    }
+  }
+}
+questionFive();
 
 
 //Question7
