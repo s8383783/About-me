@@ -115,9 +115,10 @@ function questionSix(){
     else if(favNumanswer > 8){
       favNumanswer = prompt('Your guess is to high! Try again. You have' + remainingChances + 'remaining');
     }
-    else if(favNumanswer === 8){
+    else if (favNumanswer === 8); {
       alert('Correct!');
       Right++;
+      break;
     }
   }
 }
