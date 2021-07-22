@@ -26,6 +26,7 @@ questionOne();
 
 // Question 2
 
+function questionTwo(){
 
 let color = prompt('Is my favorite color green?');
 let lowColor = color.toLowerCase();
@@ -39,6 +40,8 @@ else if(lowColor === 'no' || lowColor === 'n') {
 else {
   alert('That is not an option!');}
 
+}
+questionTwo();
 
 // Question 3
 let bestState = prompt('Is Texas the greatest state in the entire world?');
