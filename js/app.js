@@ -82,6 +82,9 @@ else{
 questionFour();
 
 // Question 5
+
+function questionFive(){
+
 let favGame = prompt('My favorite game is cyberpunk 2077?');
 let lowFavegame = favGame.toLowerCase();
 if (lowFavegame === 'yes' || lowFavegame === 'y') {
@@ -94,7 +97,8 @@ else if (lowFavegame === 'no' || lowFavegame === 'n') {
 else{
   alert('That is not an option!');}
 
-
+}
+questionFive();
 
 //Question 6
 let NumberOfChances = 6;
